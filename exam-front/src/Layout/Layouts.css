@@ -1,0 +1,47 @@
+* {
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+ul {
+    display: flex;
+    gap: 3rem;
+}
+
+nav button {
+    cursor: pointer;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 15px;
+    border: 1px solid lightgray;
+    background-color: white;
+    transition: 0.3s;
+}
+
+nav button:hover {
+    background-color: rgb(67, 67, 255);
+}
+
+nav ul li a {
+    color: black;
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.footer {
+    background-color: #002347;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
