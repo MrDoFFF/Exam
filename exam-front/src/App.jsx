@@ -8,6 +8,7 @@ import Details from './Pages/Details';
 import AddPage from './Pages/AddPage';
 import AdminLayouts from './Layout/AdminLAyouts';
 import AdminTable from './Pages/AdminTable';
+import NotFoundPage from './Pages/NotFoundPage';
 
 function App() {
 
@@ -25,6 +26,7 @@ function App() {
               <Route index element={<AdminTable/>}></Route>
               <Route path='addpages' element={<AddPage/>}></Route>
             </Route>
+            <Route path='*' element={<NotFoundPage/>}></Route>
         </Routes>
       </BrowserRouter>
     </>

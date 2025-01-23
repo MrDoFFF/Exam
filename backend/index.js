@@ -14,7 +14,7 @@ const UserSchema = new mongoose.Schema({
     image: String,
     description: String,
     name: String,
-    price:Number
+    price: Number
 });
 const Aroma = mongoose.model('Aroma', UserSchema);
 
@@ -25,17 +25,22 @@ app.get('/aromas', async (req, res) => {
     res.send(getData)
 })
 app.get('/aromas/:id', async (req, res) => {
-    const {id} = req.params
+    const { id } = req.params
     const getData = await Aroma.findById(id)
     res.send(getData)
 })
 
-app.delete('/aromas/:id', async (req,res) =>{
-    const {id} = req.params
+app.delete('/aromas/:id', async (req, res) => {
+    const id = req.params.id
+    await Aroma.findByIdAndDelete(id)
+    res.send("succes deleted")
 
 })
 
-app.post('aromas', async (req,res)=> {
+app.post('/aromas', async (req, res) => {
+    const post = new Aroma(req.body)
+    await post.save()
+    res.send("succes post")
 
 })
 

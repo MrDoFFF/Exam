@@ -8,7 +8,7 @@ function AddPage() {
                 <meta charSet="utf-8" />
                 <title>Add Page</title>
             </Helmet>
-            <h1>saalam</h1>
+         
         </div>
     )
 }

@@ -9,6 +9,7 @@ function NotFoundPage() {
                 <title>404</title>
                 <link rel="canonical" href="http://mysite.com/example" />
             </Helmet>
+            <h1 style={{position:'absolute', top:'50%' , left:'50%'}}>404 not found page</h1>
     </div>
   )
 }

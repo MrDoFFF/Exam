@@ -27,3 +27,48 @@
   color: gray;
   font-size: 20px;
 }
+table{
+  width: 800px;
+}
+
+.banner{
+  display: flex;
+  justify-content: center;
+}
+.banner-right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  height: 80vh;
+}
+.banner-left img{
+  width: 300px;
+  height:400px;
+  position: absolute;
+  top: 20%;
+  left: 10%;
+}
+.banner-left {
+  width: 40%;
+  background-color: blue;
+}
+.text{
+  width: 300px;
+}
+.text button{
+  margin-top: 1rem;
+  cursor: pointer;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 15px;
+  border: 1px solid lightgray;
+  background-color: white;
+  transition: 0.3s;
+}
+
+.text button:hover{
+  background-color: lightblue;
+}

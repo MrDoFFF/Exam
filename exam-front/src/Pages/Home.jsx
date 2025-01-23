@@ -26,12 +26,18 @@ function Home() {
                         <img src="https://preview.colorlib.com/theme/aroma/img/home/hero-banner.png" alt="" />
                     </div>
                     <div className="banner-right">
-                        <h5>Shop is fun</h5>
+                    <div className="text">
+                    <h5>Shop is fun</h5>
                         <h1>Browse Our Premium Product</h1>
                         <p>Us which over of signs divide dominion deep fill bring they're meat beho upon own earth without morning over third. Their male dry. They are great appear whose land fly grass.</p>
                         <button>Browse Now</button>
                     </div>
+                    </div>
                 </div>
+            </div>
+            <div className="search" style={{display:'flex', justifyContent:'center', padding:'15px'}}>
+            <input type="text"  />
+
             </div>
 
             <div className="row">
